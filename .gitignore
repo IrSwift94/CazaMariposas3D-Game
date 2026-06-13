@@ -9,3 +9,6 @@
 *.apk
 *.aab
 *.exe
+/Library/PackageCache/
+*.dylib
+*.hdr
