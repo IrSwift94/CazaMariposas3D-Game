@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\assets\\scripts\\mariposacolision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mariposacolision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\assets\\scripts\\spawnermariposas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnermariposas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|c:\\users\\usuario\\desktop\\cazamariposas3d\\assets\\scripts\\jugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\assets\\scripts\\camaracontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAE28E1-BF3E-42B3-738E-037626A3360D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camaracontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T19:42:11.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MariposaColision.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\MariposaColision.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MariposaColision.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\MariposaColision.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MariposaColision.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T00:17:48.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwIYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T23:05:02.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SpawnerMariposas.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\SpawnerMariposas.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpawnerMariposas.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\SpawnerMariposas.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpawnerMariposas.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwAQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T19:12:44.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CamaraControlador.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\CamaraControlador.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CamaraControlador.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\CamaraControlador.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CamaraControlador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T15:17:04.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JugadorController.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\JugadorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\JugadorController.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\JugadorController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\JugadorController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowD4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:58:06.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\MenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuManager.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\CazaMariposas3D\\Assets\\Scripts\\MenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T22:44:54.573Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
