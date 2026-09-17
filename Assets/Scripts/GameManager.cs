@@ -7,28 +7,28 @@ public class GameManager: MonoBehaviour
 
 
     // Puntuación actual del jugador
-    public static int puntuacion = 0;
+    private static int puntuacion = 0;
 
     // Tiempo restante de la partida
-    public float tiempoRestante = 90f;
+    [SerializeField] private float tiempoRestante = 90f;
 
     // Referencias a los textos de la UI
-    public TextMeshProUGUI textoPuntuacion;
-    public TextMeshProUGUI textoTiempo;
+    [SerializeField] private TextMeshProUGUI textoPuntuacion;
+    [SerializeField] private TextMeshProUGUI textoTiempo;
 
     //Panel que se muestra al acabar la partida
-    public GameObject panelFinPartida;
+    [SerializeField] private GameObject panelFinPartida;
 
     // Texto de puntuación final
-    public TextMeshProUGUI textoPuntuacionFinal;
+    [SerializeField] private TextMeshProUGUI textoPuntuacionFinal;
 
     //Panel de pausa
-    public GameObject panelPausa;
+    [SerializeField] private GameObject panelPausa;
 
     // Estado de pausa
     private bool pausado = false;
 
-    void Start()
+    private void Start()
     {
         Time.timeScale = 1; // Asegura que el tiempo está activo al iniciar
         
@@ -43,7 +43,7 @@ public class GameManager: MonoBehaviour
         
     }
 
-    void Update()
+    private void Update()
     {
         //Pausa y reanuda con Escape
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -73,7 +73,7 @@ public class GameManager: MonoBehaviour
     }
 
     //Actualiza los textos de puntuación y tiempo en pantalla
-    void ActualizarUI() 
+    private void ActualizarUI() 
     {
         textoPuntuacion.text = "Puntuación: " + puntuacion;
         textoTiempo.text = "Tiempo: " + Mathf.CeilToInt(tiempoRestante);
@@ -95,7 +95,7 @@ public class GameManager: MonoBehaviour
     }
 
     //Muestra el panel de fin de partida
-    void FinPartida()
+    private void FinPartida()
     {
         tiempoRestante = 0;
         panelFinPartida.SetActive(true);

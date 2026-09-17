@@ -1,69 +1,113 @@
 using UnityEngine;
 
-public class JugadorController : MonoBehaviour 
+
+
+
+public class JugadorController : MonoBehaviour
 {
-    //Velocidad de movimiento del jugador
-    public float velocidad = 5f;
+    // Velocidad de movimiento del jugador
+    [SerializeField] private float velocidad = 5f;
 
-    // Referencia al Animator del personaje chibi
-    public Animator animator;
+    // Referencia al Animator del personaje
+    private Animator animator;
 
-    void Start()
+    // Movimiento del jugador
+    private Vector3 movimiento;
+
+    // Rigidbody del jugador
+    private Rigidbody rb;
+
+    private void Start()
     {
-        //Busca el Animator en los hijos del jugador
+        // Busca el Animator en los hijos del jugador
         animator = GetComponentInChildren<Animator>(true);
-        if (animator == null)
-            Debug.Log("Animator es NULL");
 
-        else
-            Debug.Log("Animator encontrado: " + animator.gameObject.name);
+       
 
-        Debug.Log("Animator gameobject: " + animator.gameObject.name);
-        Debug.Log("Controller: " + animator.runtimeAnimatorController);
+        // Obtiene el Rigidbody
+        rb = GetComponent<Rigidbody>();
 
-        
-
+        // Interpolación para suavizar el movimiento visual
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
     }
 
-
-
-    void Update()
+    private void Update()
     {
-        
-
-        //Obtiene el input horizontal (A/D) y vertical (W/S)
+        // Leer INPUT en Update
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        Debug.Log("H: " + horizontal + " V: " + vertical);
 
-        // Calcula el movimiento
-        Vector3 movimiento = new Vector3(horizontal, 0, vertical);
+        // Crear dirección de movimiento
+        movimiento = new Vector3(horizontal, 0f, vertical);
 
+        // Evita que la diagonal sea más rápida
+        movimiento = Vector3.ClampMagnitude(movimiento, 1f);
 
-        // Mueve el jugador en las 4 direcciones fijas
-        transform.Translate(movimiento * velocidad * Time.deltaTime, Space.World);
-
-        // Actualiza el parámetro Velocidad del Animator
-        float mag = movimiento.magnitude;
-        Debug.Log("Magnitude: " + mag);
-        animator.SetFloat("Velocidad", mag);
-
-
-
-        Debug.Log("SetFloat Velocidad: " + movimiento.magnitude);
-        Debug.Log("Movimiento: " + movimiento);
-
-        Debug.Log("Animator objeto: " + animator.gameObject.name);
-
-
-        //Rota el personaje hacia la dirección de movimiento
+        // Rotar el personaje hacia la dirección de movimiento
         if (movimiento != Vector3.zero)
         {
             Quaternion rotacionObjetivo = Quaternion.LookRotation(movimiento);
-            rotacionObjetivo *= Quaternion.Euler(0, 180, 0);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotacionObjetivo, 10f * Time.deltaTime);
+
+            // Si el modelo mira hacia atrás
+            rotacionObjetivo *= Quaternion.Euler(0f, 180f, 0f);
+
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                rotacionObjetivo,
+                10f * Time.deltaTime
+            );
         }
 
+        // Animator
+        if (animator != null)
+        {
+            //Actualizar velocidad del Animator
+             animator.SetFloat("Velocidad", movimiento.magnitude);
+        }
     }
 
+    private void FixedUpdate()
+    {
+        if (movimiento.sqrMagnitude < 0.0001f)
+            return;
+
+        Vector3 direccion = movimiento.normalized;
+        float distancia = velocidad * Time.fixedDeltaTime;
+
+        // Comprobar si hay una pared delante
+        if (rb.SweepTest(
+            direccion,
+            out RaycastHit hit,
+            distancia,
+            QueryTriggerInteraction.Ignore))
+        {
+            // Convertimos el movimiento en un movimiento paralelo a la pared
+            Vector3 direccionDeslizamiento =
+                Vector3.ProjectOnPlane(direccion, hit.normal);
+
+            direccionDeslizamiento.y = 0f;
+
+            if (direccionDeslizamiento.sqrMagnitude > 0.0001f)
+            {
+                direccionDeslizamiento.Normalize();
+
+                // Deslizamiento por la pared
+                rb.MovePosition(
+                    rb.position + direccionDeslizamiento * distancia
+                );
+            }
+
+            return;
+        }
+
+        // Movimiento normal
+        rb.MovePosition(
+            rb.position + direccion * distancia
+        );
+    }
 }
+
+
+
+
+

@@ -12,3 +12,4 @@
 /Library/PackageCache/
 *.dylib
 *.hdr
+.vs/

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Jugador
   - Suelo
+  - "Obst\xE1culo"
+  - Obstaculo
   layers:
   - Default
   - TransparentFX
