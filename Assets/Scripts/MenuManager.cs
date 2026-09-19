@@ -21,4 +21,9 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    //Cierra el juego al pulsar "Salir"
+    public void SalirDelJuego() 
+    { 
+      Application.Quit();
+    }
 }
