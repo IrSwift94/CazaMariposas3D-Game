@@ -9,7 +9,6 @@ El jugador debe cazar mariposas antes de que lleguen al suelo, desplazándose po
 La partida tiene una duración limitada y el objetivo es conseguir la mayor puntuación posible.
 
 ## 📸 Capturas
-
 ### 🏠 Menú principal
 
 ![Menú principal](Screenshots/menu.png)
@@ -25,6 +24,9 @@ La partida tiene una duración limitada y el objetivo es conseguir la mayor punt
 ### 🏆 Resultado de la partida
 
 ![Resultado de la partida](Screenshots/resultado.png)
+
+
+
 
 ## 🕹️ Controles
 
